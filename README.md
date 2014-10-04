@@ -30,6 +30,13 @@ Please make sure:
 * To anable zooming ScrollView's 'max zoom' should be greater than 1 (Attributes Inspector). I used 3 in this demo.
 * ImageView, ScrollView, four layout constraints and 'change image' button should be linked to their outlets in `ImageScrollViewController.m`.
 
+### Image constraint item order
+
+First item must be image, for each of the four auto layout constraint connected to the **image**. If first item is superview there will be layout glitches.
+
+<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_constraint.png' width='300' alt='image constraint item order'>
+
+
 ## Thanks
 
 * [William Warby](https://www.flickr.com/photos/wwarby) for making the wallaby photo. http://www.flickr.com/photos/wwarby
