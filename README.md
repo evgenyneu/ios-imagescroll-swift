@@ -1,4 +1,4 @@
-# Image in a scroll view with auto layout in iOS
+# Image in a scroll view with auto layout in iOS in Swift
 
 This is a demo iOS app written in Swift that shows how to use image inside a scroll view with auto layout.
 
