@@ -32,7 +32,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HRa-6J-Wc8" secondAttribute="bottom" id="4Pl-W1-79j"/>
                             <constraint firstAttribute="trailing" secondItem="HRa-6J-Wc8" secondAttribute="trailing" id="s8j-SF-0aq"/>
