@@ -6,7 +6,7 @@ Image can be panned and zoomed. It is centered and zoomed out initially. Adapts 
 
 Tested in iOS 7.1 and 8.0.
 
-<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_scroll.png' width='556' alt='Using image inside a scroll view with autolayout in iOS 7'>
+<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_scroll.png' width='556' alt='Using image inside a scroll view with auto layout in iOS 7'>
 
 ## Things to note
 
@@ -16,7 +16,7 @@ Tested in iOS 7.1 and 8.0.
 
 ## How to copy this control to your project
 
-* In your storyboard 'Use Autolayout' setting must enabled.
+* In your storyboard 'Use Auto Layout' setting must enabled.
 * Copy files `ImageScrollViewController.m` and `ImageScrollViewController.h` into your project.
 * Copy Image Scroll View Controller into your storyboard, like this:
 
@@ -28,8 +28,8 @@ Tested in iOS 7.1 and 8.0.
 Please make sure:
 
 * Your view controller's class is ImageScrollViewController (Identity Inspector).
-* VC storybord has all the controlls: View, ScrollView and ImageView along with all their constraints.
-* To anable zooming ScrollView's 'max zoom' should be greater than 1 (Attributes Inspector). I used 3 in this demo.
+* Storyboard has all the controls: View, ScrollView and ImageView along with all their constraints.
+* To enable zooming ScrollView's 'max zoom' should be greater than 1 (Attributes Inspector). I used 3 in this demo.
 * ImageView, ScrollView, four layout constraints and 'change image' button should be linked to their outlets in `ImageScrollViewController.m`.
 
 ### Image constraint item order
