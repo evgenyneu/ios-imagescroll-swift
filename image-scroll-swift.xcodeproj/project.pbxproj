@@ -13,6 +13,9 @@
 		2BABDE3919DF818E005EC045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BABDE3819DF818E005EC045 /* Images.xcassets */; };
 		2BABDE3C19DF818E005EC045 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BABDE3A19DF818E005EC045 /* LaunchScreen.xib */; };
 		2BABDE4819DF818F005EC045 /* image_scroll_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BABDE4719DF818F005EC045 /* image_scroll_swiftTests.swift */; };
+		2BABDE5219DF83C8005EC045 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BABDE5119DF83C8005EC045 /* Default-568h@2x.png */; };
+		2BABDE5519DF8604005EC045 /* wallabi_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BABDE5319DF8604005EC045 /* wallabi_small.jpg */; };
+		2BABDE5619DF8604005EC045 /* wallabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BABDE5419DF8604005EC045 /* wallabi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2BABDE4119DF818F005EC045 /* image-scroll-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "image-scroll-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BABDE4619DF818F005EC045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BABDE4719DF818F005EC045 /* image_scroll_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_scroll_swiftTests.swift; sourceTree = "<group>"; };
+		2BABDE5119DF83C8005EC045 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2BABDE5319DF8604005EC045 /* wallabi_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallabi_small.jpg; sourceTree = "<group>"; };
+		2BABDE5419DF8604005EC045 /* wallabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallabi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 		2BABDE2319DF818E005EC045 = {
 			isa = PBXGroup;
 			children = (
+				2BABDE5119DF83C8005EC045 /* Default-568h@2x.png */,
+				2BABDE5319DF8604005EC045 /* wallabi_small.jpg */,
+				2BABDE5419DF8604005EC045 /* wallabi.jpg */,
 				2BABDE2E19DF818E005EC045 /* image-scroll-swift */,
 				2BABDE4419DF818F005EC045 /* image-scroll-swiftTests */,
 				2BABDE2D19DF818E005EC045 /* Products */,
@@ -192,8 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BABDE5519DF8604005EC045 /* wallabi_small.jpg in Resources */,
 				2BABDE3719DF818E005EC045 /* Main.storyboard in Resources */,
+				2BABDE5219DF83C8005EC045 /* Default-568h@2x.png in Resources */,
 				2BABDE3C19DF818E005EC045 /* LaunchScreen.xib in Resources */,
+				2BABDE5619DF8604005EC045 /* wallabi.jpg in Resources */,
 				2BABDE3919DF818E005EC045 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
