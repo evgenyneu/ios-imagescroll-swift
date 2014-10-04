@@ -32,9 +32,9 @@ Please make sure:
 
 ### Image constraint item order
 
-First item must be image, for each of the four auto layout constraint connected to the **image**. If first item is superview there will be layout glitches.
+For each of the four auto layout constraint connected to the **image**, **first item must be image** (and not superview).
 
-<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_constraint.png' width='300' alt='image constraint item order'>
+<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_constraint.png' width='400' alt='image constraint item order'>
 
 
 ## Thanks
