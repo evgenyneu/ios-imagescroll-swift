@@ -8,10 +8,15 @@
 
 import UIKit
 
+let imageScrollLargeImageName = "wallabi.jpg"
+let imageScrollSmallImageName = "wallabi_small.jpg"
+
+
 class ViewController: UIViewController, UIScrollViewDelegate {
 
   @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var imageSizeToggleButton: UIButton!
 
   @IBOutlet weak var imageConstraintTop: NSLayoutConstraint!
   @IBOutlet weak var imageConstraintRight: NSLayoutConstraint!
@@ -23,7 +28,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
 
-    imageView.image = UIImage(named: "wallabi.jpg")
+    imageView.image = UIImage(named: imageScrollLargeImageName)
     scrollView.delegate = self
     updateZoom()
   }
@@ -38,24 +43,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     super.willAnimateRotationToInterfaceOrientation(toInterfaceOrientation, duration: duration)
     updateZoom()
-  }
-
-  // Zoom to show as much image as possible unless image is smaller than screen
-  private func updateZoom() {
-    if let image = imageView.image {
-      var minZoom = min(view.bounds.size.width / image.size.width,
-        view.bounds.size.height / image.size.height)
-
-      if minZoom > 1 { minZoom = 1 }
-
-      scrollView.minimumZoomScale = minZoom
-
-      // Force scrollViewDidZoom fire if zoom did not change
-      if minZoom == lastZoomScale { minZoom += 0.000001 }
-
-      scrollView.zoomScale = minZoom
-      lastZoomScale = minZoom
-    }
   }
 
   func updateConstraints() {
@@ -84,6 +71,35 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
   }
 
+  // Zoom to show as much image as possible unless image is smaller than screen
+  private func updateZoom() {
+    if let image = imageView.image {
+      var minZoom = min(view.bounds.size.width / image.size.width,
+        view.bounds.size.height / image.size.height)
+
+      if minZoom > 1 { minZoom = 1 }
+
+      scrollView.minimumZoomScale = minZoom
+
+      // Force scrollViewDidZoom fire if zoom did not change
+      if minZoom == lastZoomScale { minZoom += 0.000001 }
+
+      scrollView.zoomScale = minZoom
+      lastZoomScale = minZoom
+    }
+  }
+
+  @IBAction func onImageSizeToggleButtonTapped(sender: AnyObject) {
+    imageSizeToggleButton.selected = !imageSizeToggleButton.selected
+    imageSizeToggleButton.invalidateIntrinsicContentSize()
+
+    let fileName = imageSizeToggleButton.selected ?
+      imageScrollSmallImageName : imageScrollLargeImageName
+
+    imageView.image = UIImage(named: fileName)
+    updateZoom()
+  }
+  
   // UIScrollViewDelegate
   // -----------------------
 
