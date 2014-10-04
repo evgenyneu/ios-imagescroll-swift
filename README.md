@@ -4,7 +4,7 @@ This is a demo iOS app written in Swift that shows how to use image inside a scr
 
 Image can be panned and zoomed. It is centered and zoomed out initially. Adapts to device orientation change with animation.
 
-This repository replaces [objective-c version](https://github.com/evgenyneu/ios-imagescroll)
+This repository replaces previous [objective-c version](https://github.com/evgenyneu/ios-imagescroll).
 
 Tested in iOS 7.1 and 8.0.
 
