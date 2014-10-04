@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   @IBOutlet weak var imageConstraintLeft: NSLayoutConstraint!
   @IBOutlet weak var imageConstraintBottom: NSLayoutConstraint!
 
-  var lastZoomScale: CGFloat = 0
+  var lastZoomScale: CGFloat = -1
 
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)

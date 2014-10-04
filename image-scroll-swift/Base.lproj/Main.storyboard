@@ -21,19 +21,22 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-6J-Wc8">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="9gg-Tz-mlW">
-                                        <rect key="frame" x="250" y="240" width="100" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="9gg-Tz-mlW">
+                                        <rect key="frame" x="250" y="250" width="100" height="100"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="9gg-Tz-mlW" firstAttribute="top" secondItem="HRa-6J-Wc8" secondAttribute="top" constant="240" id="1oL-yU-TS2"/>
-                                    <constraint firstAttribute="trailing" secondItem="9gg-Tz-mlW" secondAttribute="trailing" constant="250" id="Ps3-hd-u0q"/>
+                                    <constraint firstItem="9gg-Tz-mlW" firstAttribute="top" secondItem="HRa-6J-Wc8" secondAttribute="top" constant="250" id="1oL-yU-TS2"/>
+                                    <constraint firstAttribute="trailing" secondItem="9gg-Tz-mlW" secondAttribute="trailing" constant="-1" id="Ps3-hd-u0q"/>
                                     <constraint firstItem="9gg-Tz-mlW" firstAttribute="leading" secondItem="HRa-6J-Wc8" secondAttribute="leading" constant="250" id="YsL-7l-MRx"/>
-                                    <constraint firstAttribute="bottom" secondItem="9gg-Tz-mlW" secondAttribute="bottom" constant="240" id="zVb-9x-qi4"/>
+                                    <constraint firstAttribute="bottom" secondItem="9gg-Tz-mlW" secondAttribute="bottom" constant="-1" id="zVb-9x-qi4"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-8V-Wus">
-                                <rect key="frame" x="26" y="30" width="84" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-8V-Wus">
+                                <rect key="frame" x="26" y="30" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aab-YK-hpc"/>
+                                </constraints>
                                 <state key="normal" title="Small image">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
