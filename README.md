@@ -39,12 +39,12 @@ For each of the four auto layout constraints between the image and the scroll vi
 <img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_constraint.png' width='402' alt='image constraint item order'>
 
 
+## Objective-C version
+
+This repository replaces previous [objective-c version](https://github.com/evgenyneu/ios-imagescroll).
+
 ## Thanks
 
 * [William Warby](https://www.flickr.com/photos/wwarby) for making the wallaby photo. http://www.flickr.com/photos/wwarby
 
 * [cojoj](https://github.com/cojoj) for fixing [layout bug](https://github.com/evgenyneu/ios-imagescroll/issues/5) in iOS 8.
-
-## Objective-C version
-
-This repository replaces previous [objective-c version](https://github.com/evgenyneu/ios-imagescroll).
