@@ -54,10 +54,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
       let viewHeight = view.bounds.size.height
 
       // center image if it is smaller than screen
-      var hPadding = (viewWidth - self.scrollView.zoomScale * imageWidth) / 2
+      var hPadding = (viewWidth - scrollView.zoomScale * imageWidth) / 2
       if hPadding < 0 { hPadding = 0 }
 
-      var vPadding = (viewHeight - self.scrollView.zoomScale * imageHeight) / 2
+      var vPadding = (viewHeight - scrollView.zoomScale * imageHeight) / 2
       if vPadding < 0 { vPadding = 0 }
 
       imageConstraintLeft.constant = hPadding
