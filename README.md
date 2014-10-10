@@ -15,7 +15,7 @@ Tested in iOS 7.1 and 8.0.
 ## How to copy this control to your project
 
 * In your storyboard 'Use Auto Layout' setting must enabled.
-* Copy files `ImageScrollViewController.m` and `ImageScrollViewController.h` into your project.
+* Copy files `ViewController.swift` into your project.
 * Copy Image Scroll View Controller into your storyboard, like this:
 
 <img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_scroll.png' width='357' alt='Copy Image View Controller'>
@@ -28,7 +28,7 @@ Please make sure:
 * Your view controller's class is ImageScrollViewController (Identity Inspector).
 * Storyboard has all the controls: View, ScrollView and ImageView along with all their constraints.
 * To enable zooming ScrollView's 'max zoom' should be greater than 1 (Attributes Inspector). I used 3 in this demo.
-* ImageView, ScrollView, four layout constraints and 'change image' button should be linked to their outlets in `ImageScrollViewController.m`.
+* ImageView, ScrollView, four layout constraints and 'change image' button should be linked to their outlets in `ViewController.swift`.
 
 ### Image constraint item order
 
