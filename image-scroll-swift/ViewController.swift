@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
       let imageHeight = image.size.height
 
       let viewWidth = view.bounds.size.width
-      let viewHeight = view.bounds.size.height
+      let viewHeight = view.bounds.size.height - scrollView.contentInset.top
 
       // center image if it is smaller than screen
       var hPadding = (viewWidth - scrollView.zoomScale * imageWidth) / 2
