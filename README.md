@@ -29,6 +29,9 @@ Please make sure:
 * Storyboard has all the controls: View, ScrollView and ImageView along with all their constraints.
 * To enable zooming ScrollView's 'max zoom' should be greater than 1 (Attributes Inspector). I used 3 in this demo.
 * ImageView, ScrollView, four layout constraints and 'change image' button should be linked to their outlets in `ViewController.swift`.
+* If you are using navigation controller clear the **Adjust Scroll View Insets** checkbox in the *Attribute Inspector* of your view controller.
+
+<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/adjust_table_view_insets.png' width='463' alt='Clear "Adjust Scroll View Insets" in your View Controller.'>
 
 ### Image constraint item order
 
