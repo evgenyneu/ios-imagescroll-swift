@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     updateZoom()
   }
   
-  // Update zoom scale and constraints with animation on iOS 8+.
+  // Update zoom scale and constraints with animation.
   @available(iOS 8.0, *)
   override func viewWillTransitionToSize(size: CGSize,
     withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   //
   // DEPRECATION NOTICE:
   //
-  // This method is deprecated in iOS 8.0 and it is here for iOS 7.
+  // This method is deprecated in iOS 8.0 and it is here just for iOS 7.
   // You can safely remove this method if you are not supporting iOS 7.
   // Or if you do support iOS 7 you can leave it here as it will be ignored by the newer iOS versions.
   //
