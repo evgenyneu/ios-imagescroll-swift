@@ -32,12 +32,28 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     scrollView.delegate = self
     updateZoom()
   }
+  
+  // Update zoom scale and constraints with animation on iOS 8+.
+  @available(iOS 8.0, *)
+  override func viewWillTransitionToSize(size: CGSize,
+    withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+      
+    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+      
+    coordinator.animateAlongsideTransition({ [weak self] _ in
+      self?.updateZoom()
+    }, completion: nil)
+  }
 
-  // Update zoom scale and constraints
-  // It will also animate because willAnimateRotationToInterfaceOrientation
-  // is called from within an animation block
   //
-  // DEPRECATION NOTICE: This method is said to be deprecated in iOS 8.0. But it still works.
+  // Update zoom scale and constraints with animation on iOS 7.
+  //
+  // DEPRECATION NOTICE:
+  //
+  // This method is deprecated in iOS 8.0 and it is here for iOS 7.
+  // You can safely remove this method if you are not supporting iOS 7.
+  // Or if you do support iOS 7 you can leave it here as it will be ignored by the newer iOS versions.
+  //
   override func willAnimateRotationToInterfaceOrientation(
     toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
 
