@@ -15,7 +15,7 @@ Tested in iOS 7, 8 and 9.
 ## How to copy this control to your project
 
 * In your storyboard 'Use Auto Layout' setting must enabled.
-* Copy files `ViewController.swift` into your project.
+* Copy `ViewController.swift` file into your project.
 * Copy Image Scroll View Controller into your storyboard, like this:
 
 <img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/copy_image_scroll_view_controller.png' width='357' alt='Copy Image View Controller'>
