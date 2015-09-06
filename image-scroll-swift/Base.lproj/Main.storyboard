@@ -32,8 +32,8 @@
                                     <constraint firstItem="9gg-Tz-mlW" firstAttribute="bottom" secondItem="HRa-6J-Wc8" secondAttribute="bottom" constant="-1" id="zVb-9x-qi4"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-8V-Wus">
-                                <rect key="frame" x="26" y="30" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-8V-Wus">
+                                <rect key="frame" x="30" y="30" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="aab-YK-hpc"/>
                                 </constraints>
