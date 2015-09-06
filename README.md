@@ -23,7 +23,7 @@ Tested in iOS 7, 8 and 9.
 
 ## Troubleshooting
 
-Please make sure:
+Here are things to check if something goes wrong.
 
 * Your view controller's class is ViewController in Identity Inspector.
 * Storyboard has all the controls: View, ScrollView and ImageView along with all their constraints.
