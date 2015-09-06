@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  image-scroll-swift
-//
-//  Created by Evgenii Neumerzhitckii on 4/10/2014.
-//  Copyright (c) 2014 Evgenii Neumerzhitckii. All rights reserved.
-//
-
 import UIKit
 
 let imageScrollLargeImageName = "wallabi.jpg"
@@ -69,7 +61,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
       let viewWidth = view.bounds.size.width
       let viewHeight = view.bounds.size.height
 
-      // center image if it is smaller than screen
+      // center image if it is smaller than the scroll view
       var hPadding = (viewWidth - scrollView.zoomScale * imageWidth) / 2
       if hPadding < 0 { hPadding = 0 }
 
@@ -82,12 +74,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
       imageConstraintTop.constant = vPadding
       imageConstraintBottom.constant = vPadding
 
-      // Makes zoom out animation smooth and starting from the right point not from (0, 0)
       view.layoutIfNeeded()
     }
   }
 
-  // Zoom to show as much image as possible unless image is smaller than screen
+  // Zoom to show as much image as possible unless image is smaller than the scroll view
   private func updateZoom() {
     if let image = imageView.image {
       var minZoom = min(view.bounds.size.width / image.size.width,
