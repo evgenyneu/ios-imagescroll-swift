@@ -58,8 +58,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
       let imageWidth = image.size.width
       let imageHeight = image.size.height
 
-      let viewWidth = view.bounds.size.width
-      let viewHeight = view.bounds.size.height
+      let viewWidth = scrollView.bounds.size.width
+      let viewHeight = scrollView.bounds.size.height
 
       // center image if it is smaller than the scroll view
       var hPadding = (viewWidth - scrollView.zoomScale * imageWidth) / 2
@@ -81,8 +81,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   // Zoom to show as much image as possible unless image is smaller than the scroll view
   private func updateZoom() {
     if let image = imageView.image {
-      var minZoom = min(view.bounds.size.width / image.size.width,
-        view.bounds.size.height / image.size.height)
+      var minZoom = min(scrollView.bounds.size.width / image.size.width,
+        scrollView.bounds.size.height / image.size.height)
 
       if minZoom > 1 { minZoom = 1 }
 
