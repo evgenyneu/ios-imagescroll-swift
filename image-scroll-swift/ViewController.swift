@@ -3,7 +3,6 @@ import UIKit
 let imageScrollLargeImageName = "wallabi.jpg"
 let imageScrollSmallImageName = "wallabi_small.jpg"
 
-
 class ViewController: UIViewController, UIScrollViewDelegate {
 
   @IBOutlet weak var scrollView: UIScrollView!
