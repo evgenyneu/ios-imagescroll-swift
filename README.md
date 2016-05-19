@@ -35,6 +35,8 @@ Here are things to check if something goes wrong.
 
 * Set the *Intrinsic size* property to *Placeholder* in the *Size inspector* of the image view.
 
+<img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/intrinsic_size_placeholder_image_view.png' width='423' alt='Set the intrinsic size to placeholder for the image view.'>
+
 
 ### Image constraint item order
 
