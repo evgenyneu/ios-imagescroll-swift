@@ -33,6 +33,9 @@ Here are things to check if something goes wrong.
 
 <img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/adjust_table_view_insets.png' width='463' alt='Clear "Adjust Scroll View Insets" in your View Controller.'>
 
+* Set the *Intrinsic size* property to *Placeholder* in the *Size inspector* of the image view.
+
+
 ### Image constraint item order
 
 For each of the four auto layout constraints between the image and the scroll view: **first item must be image** (and not superview).
