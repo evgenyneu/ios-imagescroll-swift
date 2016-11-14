@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
   var lastZoomScale: CGFloat = -1
 
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     imageView.image = UIImage(named: imageScrollLargeImageName)
@@ -26,12 +26,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   
   // Update zoom scale and constraints with animation.
   @available(iOS 8.0, *)
-  override func viewWillTransitionToSize(size: CGSize,
-    withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+  override func viewWillTransition(to size: CGSize,
+    with coordinator: UIViewControllerTransitionCoordinator) {
       
-    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    super.viewWillTransition(to: size, with: coordinator)
       
-    coordinator.animateAlongsideTransition({ [weak self] _ in
+    coordinator.animate(alongsideTransition: { [weak self] _ in
       self?.updateZoom()
     }, completion: nil)
   }
@@ -45,10 +45,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   // You can safely remove this method if you are not supporting iOS 7.
   // Or if you do support iOS 7 you can leave it here as it will be ignored by the newer iOS versions.
   //
-  override func willAnimateRotationToInterfaceOrientation(
-    toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+  override func willAnimateRotation(
+    to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
 
-    super.willAnimateRotationToInterfaceOrientation(toInterfaceOrientation, duration: duration)
+    super.willAnimateRotation(to: toInterfaceOrientation, duration: duration)
     updateZoom()
   }
 
@@ -78,7 +78,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   }
 
   // Zoom to show as much image as possible unless image is smaller than the scroll view
-  private func updateZoom() {
+  fileprivate func updateZoom() {
     if let image = imageView.image {
       var minZoom = min(scrollView.bounds.size.width / image.size.width,
         scrollView.bounds.size.height / image.size.height)
@@ -95,11 +95,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
   }
 
-  @IBAction func onImageSizeToggleButtonTapped(sender: AnyObject) {
-    imageSizeToggleButton.selected = !imageSizeToggleButton.selected
+  @IBAction func onImageSizeToggleButtonTapped(_ sender: AnyObject) {
+    imageSizeToggleButton.isSelected = !imageSizeToggleButton.isSelected
     imageSizeToggleButton.invalidateIntrinsicContentSize()
 
-    let fileName = imageSizeToggleButton.selected ?
+    let fileName = imageSizeToggleButton.isSelected ?
       imageScrollSmallImageName : imageScrollLargeImageName
 
     imageView.image = UIImage(named: fileName)
@@ -109,11 +109,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   // UIScrollViewDelegate
   // -----------------------
 
-  func scrollViewDidZoom(scrollView: UIScrollView) {
+  func scrollViewDidZoom(_ scrollView: UIScrollView) {
     updateConstraints()
   }
 
-  func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
     return imageView
   }
 
