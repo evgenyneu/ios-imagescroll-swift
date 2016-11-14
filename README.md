@@ -2,8 +2,6 @@
 
 This is a iOS demo app that shows how to use an image in a scroll view with auto layout. It is written in Swift. Image can be panned and zoomed. It is centered and zoomed out initially. Adapts to device orientation change with animation.
 
-Tested in iOS 7, 8 and 9.
-
 <img src='https://raw.githubusercontent.com/evgenyneu/ios-imagescroll-swift/master/graphics/image_scroll.png' width='556' alt='Using image inside a scroll view with auto layout in iOS 7'>
 
 ## Things to note
